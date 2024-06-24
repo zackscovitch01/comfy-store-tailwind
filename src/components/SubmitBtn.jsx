@@ -9,7 +9,14 @@ const SubmitBtn = ({ text }) => {
       className="btn btn-primary btn-block uppercase"
       disabled={isSubmitting}
     >
-      {text}
+      {isSubmitting ? (
+        <>
+          <span className="loading loading-spinner"></span>
+          sending...
+        </>
+      ) : (
+        text || "submit"
+      )}
     </button>
   );
 };
