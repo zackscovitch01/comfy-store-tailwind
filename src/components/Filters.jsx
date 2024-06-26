@@ -39,7 +39,7 @@ const Filters = () => {
       <FormSelect
         label="sort by"
         name="order"
-        list={["A-Z", "Z-A", "Price: High to low", "Price: Low to high"]}
+        list={["a-z", "z-a", "high", "low"]}
         size="select-sm"
         defaultValue={order}
       />
