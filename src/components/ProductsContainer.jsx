@@ -3,6 +3,7 @@ import ProductsGrid from "./ProductsGrid";
 import ProductsList from "./ProductsList";
 import { useState } from "react";
 import { BsFillGridFill, BsList } from "react-icons/bs";
+import PaginationContainer from "./PaginationContainer";
 
 const ProductsContainer = () => {
   const { meta } = useLoaderData();
